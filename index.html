@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Customization!</title>
+    <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Uncomment the below line to see the effects of your CSS file! -->
+    <!-- <link href="./custom-bootstrap.css" rel="stylesheet"> --> 
+
+</head>
+<body>
+    <div class="container-fluid ">
+        <div class="row bg-primary">
+            <h1 class="text-center text-white">Hello from Mumen.blog!</h1>
+        </div>
+        <div class="row justify-content-center mt-5">
+            <button onclick="toggleMode()" type="button" class="btn btn-primary w-50">
+                Toggle mode!
+            </button>
+        </div>
+    </div>
+    <footer style="min-height: 80px;">
+        <div class="fixed-bottom py-2 alert alert-primary mb-0 text-center rounded-0" role="alert">
+            🚀 Enjoyed the content? Stay updated with the latest blogs by following me on <a class="btn btn-primary btn-sm"
+                href="https://www.linkedin.com/in/mumen-tayyem">LinkedIn</a> 🔔<br />
+        </div>
+    </footer>
+
+    <script>
+        function toggleMode(){
+            const html = document.getElementsByTagName("html")[0];
+            const currentMode = html.getAttribute("data-bs-theme");
+            
+
+            const newMode = currentMode === 'dark'? 'light':'dark';
+            html.setAttribute('data-bs-theme',newMode);
+        }
+    </script>
+</body>
+</html>

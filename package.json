@@ -1,0 +1,20 @@
+{
+  "name": "bootstrap-theming-demo",
+  "version": "1.0.0",
+  "description": "A quick guide on customizing Bootstrap",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bootstrap"
+  ],
+  "author": "Mumen Tayyem",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.2"
+  },
+  "devDependencies": {
+    "sass": "^1.70.0"
+  }
+}
